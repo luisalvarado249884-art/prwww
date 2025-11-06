@@ -1,0 +1,57 @@
+
+/*DOCUMENTO CSS*/
+   
+        /* Configuración de fuente y colores base */
+        :root {
+            --primary-color: #f40808; /* Azul vibrante */
+            --secondary-color: #000000; /* Teal oscuro */
+            --accent-color: #f79f9f; /* Durazno claro para acentos */
+            --text-color: #333333;
+            --bg-light: #0000004d;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-color);
+        }
+
+        /* Estilo para los contenedores de sección */
+        .section-card {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo para los iconos de sección */
+        .section-icon {
+            color: b;
+            margin-right: 0.75rem;
+        }
+
+        /* Estilo para el encabezado de perfil */
+        .profile-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #f36a6a 100%);
+            color: rgb(0, 0, 0);
+        }
+
+        /* Barra de progreso de Hard Skills */
+        .skill-bar {
+            height: 10px;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            margin-top: 4px;
+        }
+        .skill-level {
+            height: 100%;
+            border-radius: 5px;
+            background-color: var(--secondary-color);
+        }
+   

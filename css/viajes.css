@@ -1,0 +1,58 @@
+/*DOCUMENTO CSS*/
+body {background-color: green;}
+
+h1 {
+    background-color: black;
+    font-size: 100px;
+    font-family: "Exile", system-ui;
+    text-align: center;
+    color: white;
+
+}
+
+h2 {
+    background-color: white;
+    font-size: 80px;
+    font-family: "Expletus Sans", sans-serif;
+    text-align: center;
+    color: black;
+}
+
+
+.principal {
+    width: 70%;
+    min-height: 1px;
+    font-family: "Edu TAS Beginner", cursive;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.principal img {
+    width: 100%;
+    margin: center;
+}
+
+.principal p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.principal a {
+    display: block;
+    width: 200px;
+    padding: 8px;
+    background-color: rgb(228, 40, 40);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.principal a:hover {background-color: aquamarine;
+color: brown;}
+
+.principal a:active {background-color: aquamarine;
+    color: brown;
+
+}

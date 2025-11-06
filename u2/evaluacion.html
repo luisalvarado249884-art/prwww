@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional - Luis Alvarado</title>
+    <!-- Carga de Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de Font Awesome para Íconos (simulando iconos de Bootstrap) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJ8g35pQY7OICgR9u2/Yd0yL5A7F/d/5/4G9zF9/6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--CSS DEL PROYECTO-->
+       <link rel="stylesheet" href="..//css/evaluacion.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--primary-color)',
+                        secondary: 'var(--secondary-color)',
+                        accent: 'var(--accent-color)',
+                    },
+                    /* Definición de breakpoints personalizados */
+                    screens: {
+                        'sm': '600px', /* Breakpoint 1: 600px */
+                        'md': '992px', /* Breakpoint 2: 992px */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="p-4 sm:p-6 md:p-8">
+
+    <!-- Encabezado Semántico: Header -->
+    <header class="profile-header text-white p-6 rounded-t-xl shadow-lg mb-8 md:flex md:items-center">
+        <!-- Foto de Perfil (Columna Izquierda en Desktop) -->
+        <div class="md:w-1/4 flex justify-center mb-4 md:mb-0">
+            <img src="..//img/LUISALVARADO.jpg" 
+                 alt="Foto de Perfil de Luis Alvarado" 
+                 class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white object-cover shadow-2xl">
+        </div>
+
+        <!-- Información de Contacto y Título (Columna Derecha/Central) -->
+        <div class="md:w-3/4 md:pl-8 text-center md:text-left">
+            <h1 class="text-4xl sm:text-5xl font-extrabold mb-1">Luis Alvarado</h1>
+            <p class="text-xl sm:text-2xl font-light mb-4 border-b border-white/50 pb-2 inline-block">Full Stack Designer</p>
+            
+            <!-- Contacto (visible en todas las pantallas, agrupado con Flexbox) -->
+            <address class="flex flex-col sm:flex-row sm:justify-center md:justify-start gap-4 text-sm font-light not-italic">
+                <div class="flex items-center justify-center sm:justify-start">
+                    <i class="fas fa-phone mr-2 text-accent"></i>
+                    <span>+644 134 7474</span> <!-- Teléfono Falso -->
+                </div>
+                <div class="flex items-center justify-center sm:justify-start">
+                    <i class="fas fa-envelope mr-2 text-accent"></i>
+                    <a href="mailto:contacto@miperfil.com" class="hover:underline">lualvarado@gmail.com</a>
+                </div>
+            </address>
+        </div>
+    </header>
+
+    <!-- Cuerpo Semántico: Main -->
+    <main class="md:flex md:gap-8">
+        
+        <!-- Columna Principal (Abstracto, Educación, Experiencia) - Ocupa 2/3 en desktop -->
+        <div class="md:w-2/3">
+
+            <!-- Sección: Abstract / Resumen Personal -->
+            <section class="section-card" id="abstract">
+                <h2 class="text-2xl font-bold mb-4 flex items-center border-b pb-2 border-primary/20">
+                    <i class="section-icon fas fa-user-tie text-2xl"></i> Abstract
+                </h2>
+                <article>
+                    <p class="text-gray-700 leading-relaxed">
+                        Soy un full stack designer, en base a responsive design, Mi objetivo es dar resultados en cuanto a experiencia de usuario intuituvo, Busco un rol donde pueda aplicar mi pensamiento crítico.
+                    </p>
+                </article>
+            </section>
+
+            <!-- Sección: Experiencia Profesional -->
+            <section class="section-card" id="experiencia">
+                <h2 class="text-2xl font-bold mb-4 flex items-center border-b pb-2 border-primary/20">
+                    <i class="section-icon fas fa-briefcase text-2xl"></i> Experiencia Profesional
+                </h2>
+                <!-- Uso de Article para cada ítem de experiencia -->
+                <article class="mb-4 p-3 border-l-4 border-secondary/50 hover:border-secondary transition-colors duration-200">
+                    <h3 class="text-xl font-semibold text-secondary">Diseñador De Interfaces</h3>
+                    <p class="text-sm text-gray-500 mb-2 flex justify-between">
+                        <span>INSTITUTO TECNOLOGICO DE SONORA</span>
+                        <span>Enero 2025 - Actualidad</span>
+                    </p>
+                    <ul class="list-disc ml-5 text-gray-700 text-sm">
+                        <li>Asertividad en diseño interactivo de una pagina con mejoria del 30%.</li>
+                        <li>Comunicacion con mi equipo de trabajo clara, optima y eficiente.</li>
+                    </ul>
+                </article>
+
+                <article class="p-3 border-l-4 border-secondary/50 hover:border-secondary transition-colors duration-200">
+                    <h3 class="text-xl font-semibold text-secondary">Herramientas y metodologías</h3>
+                    <p class="text-sm text-gray-500 mb-2 flex justify-between">
+                        <span>Manejo de sistemas como Git</span>
+                        <span>Enero 2025 - Actualidad</span>
+                    </p>
+                    <ul class="list-disc ml-5 text-gray-700 text-sm">
+                        <li>Uso de Figma</li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- Sección: Educación -->
+            <section class="section-card" id="educacion">
+                <h2 class="text-2xl font-bold mb-4 flex items-center border-b pb-2 border-primary/20">
+                    <i class="section-icon fas fa-graduation-cap text-2xl"></i> Educación
+                </h2>
+                <article class="mb-3">
+                    <h3 class="text-lg font-semibold text-gray-800">Licenciado en Diseño Grafic</h3>
+                    <p class="text-sm text-gray-600">INSTITUTO TECNOLOGICO DE SONORA</p>
+                    <p class="text-xs text-gray-500">2023-2027</p>
+                </article>
+                <article>
+                    <h3 class="text-lg font-semibold text-gray-800">Cursos de Verano</h3>
+                    <p class="text-sm text-gray-600">Idioma Ingles Cambridge</p>
+                    <p class="text-xs text-gray-500">2020-2027 ITSON</p>
+                </article>
+            </section>
+
+        </div>
+
+        <!-- Columna Lateral (Habilidades, Contacto) - Ocupa 1/3 en desktop -->
+        <aside class="md:w-1/3 mt-8 md:mt-0">
+            
+            <!-- Sección: Hard Skills (Habilidades Técnicas) -->
+            <section class="section-card" id="hard-skills">
+                <h2 class="text-2xl font-bold mb-4 flex items-center border-b pb-2 border-primary/20">
+                    <i class="section-icon fas fa-code text-2xl"></i> Hard Skills
+                </h2>
+                
+                <!-- Ítem de Habilidad con barra de progreso -->
+                <div class="mb-3">
+                    <p class="text-sm font-medium">UI Design</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%;"></div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <p class="text-sm font-medium">Interaction Design</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <p class="text-sm font-medium">Front End Development</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <p class="text-sm font-medium">Responsive Design</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 98%;"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección: Soft Skills (Habilidades Blandas) -->
+            <section class="section-card" id="soft-skills">
+                <h2 class="text-2xl font-bold mb-4 flex items-center border-b pb-2 border-primary/20">
+                    <i class="section-icon fas fa-handshake text-2xl"></i> Soft Skills
+                </h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-accent text-secondary text-xs font-semibold px-3 py-1 rounded-full shadow-sm">Comunicación Efectiva</span>
+                    <span class="bg-accent text-secondary text-xs font-semibold px-3 py-1 rounded-full shadow-sm">Pensamiento Critico</span>
+                    <span class="bg-accent text-secondary text-xs font-semibold px-3 py-1 rounded-full shadow-sm">Gestión de Tiempo</span>
+                    <span class="bg-accent text-secondary text-xs font-semibold px-3 py-1 rounded-full shadow-sm">Resolución de Problemas</span>
+                    <span class="bg-accent text-secondary text-xs font-semibold px-3 py-1 rounded-full shadow-sm">Adaptabilidad</span>
+                </div>
+            </section>
+
+            <!-- Formulario de Contacto (Control de Formulario) -->
+            <section class="section-card" id="contacto-form">
+                <h2 class="text-2xl font-bold mb-4 flex items-center border-b pb-2 border-primary/20">
+                    <i class="section-icon fas fa-paper-plane text-2xl"></i> Contáctame
+                </h2>
+                <form action="#" method="POST">
+                    <p class="mb-3 text-sm text-gray-600">¿Has encontrado al sujeto que puede hacer el trabajo? Dejame tu correo y te contacto enseguida:</p>
+                    <div class="flex flex-col sm:flex-row gap-2">
+                        <!-- Control de Formulario: Caja de Email -->
+                        <input type="email" id="email" name="email" placeholder="tu.email@ejemplo.com" required 
+                               class="w-full sm:flex-grow p-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary transition-all duration-150">
+                        
+                        <!-- Botón de Envío -->
+                        <button type="submit" 
+                                class="w-full sm:w-auto p-2 bg-secondary text-white font-semibold rounded-lg hover:bg-secondary/90 transition-colors duration-200">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+        </aside>
+
+    </main>
+
+    <!-- Pie de Página Semántico: Footer -->
+    <footer class="mt-8 pt-6 border-t border-gray-300 text-center text-sm text-gray-600">
+        <!-- Enlaces a Redes Sociales -->
+        <div class="mb-3 flex justify-center gap-6 text-xl">
+            <a href="#" class="text-gray-500 hover:text-blue-600 transition-colors duration-200" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-800 transition-colors duration-200" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-red-600 transition-colors duration-200" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors duration-200" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        
+        <p>&copy; 2025 Luis Alvarado. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+

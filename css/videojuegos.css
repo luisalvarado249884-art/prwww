@@ -1,0 +1,104 @@
+/*DOCUMENTO CSS*/
+body {
+  background-color: darkolivegreen !important;
+  background-image: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  ) !important;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+
+*{margin: 0px;
+padding: 0px;}
+
+.cabecera{width: 100%;
+text-align: center;
+font-size: 2em;
+}
+
+
+h2 { font-family: "Stalinist One", sans-serif;
+color: #09520b;
+background-color: #f4f4f486;}
+
+
+h2:hover {
+  background-color: rgb(33, 123, 36);
+  color: rgb(52, 255, 38);
+}
+
+
+ section {
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    .contenedor {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .espacio {
+      width: 200px;
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+  
+    .card img {
+      width: 506px;
+      height: 720px;
+      border-radius: 10px;
+
+    }
+
+    .card a img {
+  transition: transform 0.3s ease;
+  cursor: pointer; /* cambia el cursor a la manita */
+}
+
+
+    .card a img:hover {
+      transform: scale(1.05); /*agranda*/
+      filter: brightness(1.2);/*ilumina*/
+
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      color: #f4f4f4;
+     background-color: #09611c;
+     border-radius: 16px;
+     
+    }
+
+    .card h3:hover
+    {background-color: rgb(33, 123, 36);  
+  color: rgb(52, 255, 38);
+  cursor: pointer;
+}
+
+
+    
+
+    .card p {
+      font-size: 24px;
+      color: #09520b;
+        background-color: #f4f4f486;
+     border-radius: 16px;
+    }
+
+    .card p:hover {
+      background-color: rgb(33, 123, 36);
+      color: rgb(52, 255, 38);
+     cursor: pointer;
+    }
+
+  
